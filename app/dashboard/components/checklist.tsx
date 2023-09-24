@@ -17,7 +17,7 @@ import { Checkbox } from "@/components/ui/checkbox"
               olivia.martin@email.com
             </p> */}
           </div>
-          <div className="ml-auto font-medium"><Button>Enquire</Button></div>
+          <div className="ml-auto font-medium">Contacted Sept 12 - Has holiday planned from Sept 10-16, unable to automatically book in appointment</div>
         </div>
         <div className="flex items-center">
         <Checkbox id="terms1" className="scale-4" checked />   
@@ -43,7 +43,7 @@ import { Checkbox } from "@/components/ui/checkbox"
               isabella.nguyen@email.com
             </p> */}
           </div>
-          <div className="ml-auto font-medium"><Button>Enquire</Button></div>
+          <div className="ml-auto font-medium">Contacted Sept 10 - Has fear of needles, face-to-face call planned in</div>
         </div>
         <div className="flex items-center">
         <Checkbox id="terms1" className="scale-4" checked />   

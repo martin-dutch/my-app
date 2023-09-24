@@ -23,6 +23,7 @@ import { Search } from "./components/search"
 import TeamSwitcher from "./components/team-switcher"
 import { UserNav } from "./components/user-nav"
 import { Checklist } from "./components/checklist"
+import { HeatMap } from "./components/heatmap"
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -76,13 +77,27 @@ export default function DashboardPage() {
               </TabsTrigger>
             </TabsList>
             <TabsContent value="overview" className="space-y-4">
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-8">
                 <Card className="col-span-4">
                   <CardHeader>
                     <CardTitle>Knowledge Coverage</CardTitle>
+                    <CardDescription>
+                      {'Topic specific knowledge coverage for Documents provided'}
+                    </CardDescription>
                   </CardHeader>
                   <CardContent className="pl-2">
                     <Overview />
+                  </CardContent>
+                </Card>
+                <Card className="col-span-4">
+                  <CardHeader>
+                    <CardTitle>HeatMap</CardTitle>
+                    <CardDescription>
+                      {'The topics scoring highest in the heatmap are the ones that David is most interested in.'}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="pl-2">
+                    <HeatMap />
                   </CardContent>
                 </Card>
                 <Card className="col-span-3">
@@ -105,6 +120,20 @@ export default function DashboardPage() {
                   </CardHeader>
                   <CardContent>
                     <Checklist />
+                  </CardContent>
+                </Card>
+                <Card className="col-span-2">
+                  <CardHeader>
+                    <CardTitle>Patients Concerns</CardTitle>
+                    <CardDescription>
+                      {'Concerns raised by David'}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <h6>{'1. The information about aneasthesia didn\'t cover all the concerns of David'}</h6>
+                    <h6>{'2. The information about the surgery didn\'t cover all the concerns of David'}</h6>
+                    <h6>{'3. The information about aneasthesia didn\'t cover all the concerns of David'}</h6>
+                    <h6>{'4. The amount of pain experienced post-op was a concern'}</h6>
                   </CardContent>
                 </Card>
               </div>
